@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 
-import { House } from "../types/house";
 import { getAll } from "../api";
+
+import { HouseList } from "../components/ui/HouseList";
+
+import "./ListHouses.css";
+import { House } from "../types/house";
 
 export const ListHouses = () => {
   const [data, setData] = useState<House[]>();
@@ -20,21 +24,12 @@ export const ListHouses = () => {
 
   return (
     <section>
-      <h3>These are all the houses available:</h3>
+      <h2>These are all the houses available:</h2>
       {data && data.length ? (
         <HouseList houses={data} />
       ) : (
         <p>Sorry, no houses are available yet</p>
       )}
     </section>
-  );
-};
-
-const HouseList = ({ houses }: { houses: House[] }) => {
-  return (
-    <>
-      <p>{houses[0].headline}</p>
-      <img src={houses[0].imageUrl} height="200" width="200" />
-    </>
   );
 };
