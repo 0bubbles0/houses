@@ -25,16 +25,17 @@ To keep this quick, to keep track of my tasks I opted for this Markdown file ins
 ## Set up project
 
 - [x] Frontend React project
-  - [ ] REST API: axios
+  - [x] REST API: axios
   - [ ] state management, store: Redux
   - [ ] styling: plain CSS or Styled Components
   - [ ] test
+  - [ ] HTML & CSS basics: meta tags, favicon, navbar
 - [x] Backend Node project
-  - [ ] database: Mongodb & Mongoose
-  - [ ] REST API
-  - [ ] test
+  - [x] database: Mongodb & Mongoose
+  - [x] REST API
+  - [x] test
 - [x] Both: config files: git, node, TS, ESLint
-- [ ] Infrastructure: connect FE - BE - Database
+- [x] Infrastructure: connect FE - BE - Database
 - [ ] Jest Test: FE & BE
 
 - Bonus
@@ -44,12 +45,14 @@ To keep this quick, to keep track of my tasks I opted for this Markdown file ins
 
 ## Feature 1: List houses
 
-- [ ] Decide schema of a House (for db, api calls)
+- [x] Decide schema of a House (for db, api calls)
 - [ ] BE endpoint: route, input, output, validation/error/edge cases (empty), db interaction
   - Mongo seed data?
   - [ ] test: unit test scenarios, Postman
 - [ ] FE:
-  - [ ] connect to endpoint - page data (state management?, cache), print <p>
+  - [x] connect to endpoint - print page data, print <p>
+  - [ ] avoid rerenders
+  - [ ] (state management?, cache)
   - [ ] UI Components: Card(li), CardList(ul, responsive, key)
 - [ ] Connect
 - Bonus:

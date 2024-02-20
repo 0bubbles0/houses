@@ -1,5 +1,3 @@
-interface ReturnData {
-  title: string;
-}
+import { House } from "./house";
 
-export { ReturnData };
+export type ReturnData = House[];

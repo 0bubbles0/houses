@@ -43,7 +43,7 @@ My scratchpad for this task
 - [x] Readme.md
 - [ ] Github workflow
 
-### BE architecture
+### ✅ BE architecture
 
 - config
 - http
@@ -56,7 +56,7 @@ My scratchpad for this task
 - utils
 - logger
 
-### FE architecture
+### ✅ FE architecture
 
 - config
 - pages
