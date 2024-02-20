@@ -24,15 +24,15 @@ To keep this quick, to keep track of my tasks I opted for this Markdown file ins
 
 ## Set up project
 
-- [ ] Frontend React project
-  - [ ] test
-  - [ ] state management
-  - [ ] store: Redux
+- [x] Frontend React project
+  - [ ] REST API: axios
+  - [ ] state management, store: Redux
   - [ ] styling: plain CSS or Styled Components
-- [ ] Backend Node project
   - [ ] test
+- [x] Backend Node project
   - [ ] database: Mongodb & Mongoose
   - [ ] REST API
+  - [ ] test
 - [ ] Both: config files: git, node, TS, ESLint
 - [ ] Infrastructure: connect FE - BE - Database
 - [ ] Jest Test: FE & BE

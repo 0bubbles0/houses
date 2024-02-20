@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node21/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./build",
+    "allowJs": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./src/**/*",
+    "jest.config.ts"
+  ]
+}

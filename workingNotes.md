@@ -8,19 +8,19 @@ My scratchpad for this task
 
 - [x] npm ~~or yarn~~
 - [x] git
-- [ ] TypeScript
-- [ ] ESLint, Prettier
+- [x] TypeScript
+- [x] ESLint, Prettier
 
-- [ ] Node, express
+- [x] Node, express
 - [ ] Mongo
 - [ ] Mongoose
 - [ ] image solution
-- [ ] packages: nodemon, cors, dotenv
+- [x] packages: nodemon, cors, dotenv
 
-- [ ] api: axios
+- [x] api: axios
 - [ ] Schema typing: ... Typebox
 
-- [ ] React: vite or create-react-app
+- [x] React: vite or create-react-app
 - [ ] css solution
 - [ ] React state store -> Redux or Zustand
 - [ ] packages: react-dom
@@ -32,15 +32,15 @@ My scratchpad for this task
 
 ### Files
 
-- [ ] package.json:
-- [ ] .nvmrc
-- [ ] .gitignore
-- [ ] eslint
-- [ ] prettier
-- [ ] tsconfig
-- [ ] .env
-- [ ] .env.example
-- [ ] Readme.md
+- [x] package.json:
+- [x] .nvmrc
+- [x] .gitignore
+- [x] eslint
+- [x] prettier
+- [x] tsconfig
+- [x] .env
+- [x] .env.example
+- [x] Readme.md
 - [ ] Github workflow
 
 ### BE architecture
