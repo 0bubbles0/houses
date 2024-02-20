@@ -33,7 +33,7 @@ To keep this quick, to keep track of my tasks I opted for this Markdown file ins
   - [ ] database: Mongodb & Mongoose
   - [ ] REST API
   - [ ] test
-- [ ] Both: config files: git, node, TS, ESLint
+- [x] Both: config files: git, node, TS, ESLint
 - [ ] Infrastructure: connect FE - BE - Database
 - [ ] Jest Test: FE & BE
 

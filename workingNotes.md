@@ -12,8 +12,8 @@ My scratchpad for this task
 - [x] ESLint, Prettier
 
 - [x] Node, express
-- [ ] Mongo
-- [ ] Mongoose
+- [x] Mongo
+- [x] Mongoose
 - [ ] image solution
 - [x] packages: nodemon, cors, dotenv
 
@@ -23,10 +23,10 @@ My scratchpad for this task
 - [x] React: vite or create-react-app
 - [ ] css solution
 - [ ] React state store -> Redux or Zustand
-- [ ] packages: react-dom
+- [x] packages: react-dom
 - [ ] form: Formik
 
-- [ ] Jest
+- [x] Jest
 - [ ] Docker
 - [ ] GitHub workflow for Actions, CI
 
