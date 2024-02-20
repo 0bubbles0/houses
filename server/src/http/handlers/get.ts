@@ -14,9 +14,9 @@ export const getHandler = async (req: Request, res: Response) => {
     // format return data
 
     // handle success
-    sendResponse(res, { status: "success", code: 200, data });
+    return sendResponse(res, { status: "success", code: 200, data });
   } catch (e) {
     // handle error
-    sendResponse(res, { status: "error", e });
+    return sendResponse(res, { status: "error", e });
   }
 };

@@ -10,8 +10,12 @@ export type ValidationErrors<T> = {
   [key in keyof T]?: string;
 };
 
+interface AddHouseFormProps {
+  handleSubmit: (values: House) => void;
+}
+
 // @todo: reusable Form component
-export const AddHouseForm = () => {
+export const AddHouseForm = ({ handleSubmit }: AddHouseFormProps) => {
   const initialValues: House = { price: "", headline: "" };
 
   const validate = (values: House) => {
@@ -23,11 +27,14 @@ export const AddHouseForm = () => {
       errors.price = "Required";
     }
 
+    // @todo: more thorough validation & formating (eg uppercase postcodes)
+
     return errors;
   };
 
   const onSubmit = (values: House) => {
-    console.log(values);
+    // Note that Formik automatically turns address back into an object
+    handleSubmit(values);
   };
 
   return (
@@ -49,10 +56,11 @@ export const AddHouseForm = () => {
 
           {/* Price */}
           <ControlledInput
-            type="text"
+            type="number"
             name="price"
             label="Price in £"
             placeholder="200,000"
+            pattern="\d*"
             required
           />
           {/* Description */}
@@ -61,7 +69,6 @@ export const AddHouseForm = () => {
             name="description"
             label="Description"
             placeholder="This is a picturesque 2-bedroom property..."
-            required
           />
 
           {/* Image Url */}
@@ -75,12 +82,11 @@ export const AddHouseForm = () => {
 
           {/* Address Line 1 */}
           <ControlledInput
-            type="number"
+            type="text"
             name="address.line1"
             label="Address Line 1"
             placeholder="Apartment or Street name"
             required
-            pattern="\d*"
           />
 
           {/* Address Line 2 */}
@@ -89,7 +95,6 @@ export const AddHouseForm = () => {
             name="address.line2"
             label="Address Line 2"
             placeholder="Further address"
-            required
           />
 
           {/* Address Postcode */}

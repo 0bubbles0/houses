@@ -18,12 +18,13 @@ const sendResponse = (
   }: ResponseJson & Record<string, any>,
 ) => {
   const codeFallback = status === "success" ? 200 : 500;
+  const messageFallback =
+    status === "success" ? "Success" : "Something went wrong";
 
   return res.status(codeFallback).json({
     code: code ?? codeFallback,
     success: status === "success",
-    message:
-      message ?? status === "success" ? "Success" : "Something went wrong",
+    message: message ?? messageFallback,
     data,
     ...rest,
   });

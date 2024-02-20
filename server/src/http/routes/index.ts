@@ -12,10 +12,9 @@ const routes = (app: Express) => {
   });
 
   router.post("/", (req, res) => {
-    console.log("hiii route", req, res);
-
     // validation
-    // handler: business logic, success/error
+
+    handlers.create(req, res);
   });
 
   app.use("/api", router);
