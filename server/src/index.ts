@@ -4,6 +4,7 @@ import path from "path";
 
 import getConfig from "./config";
 import getRoutes from "./http/routes";
+import logger from "./logger";
 
 const config = getConfig();
 
@@ -15,7 +16,7 @@ app.use(express.static(path.join(__dirname, "public")));
 getRoutes(app);
 
 app.listen(config.http.port, () => {
-  console.info("Node Server is running on port", config.http.port);
+  logger.info("Node Server is running on port", config.http.port);
 });
 
 export default app;
