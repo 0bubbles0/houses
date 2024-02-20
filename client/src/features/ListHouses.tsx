@@ -10,10 +10,10 @@ import { House } from "../types/house";
 export const ListHouses = () => {
   const [data, setData] = useState<House[]>();
 
+  // @todo optimise this query to prevent rerenders. Maybe use Apollo queries
   useEffect(() => {
     getAll()
       .then((response) => {
-        console.log("hiiiii getQuery", response);
         setData(response.data.data);
       })
       .catch((e) => {
@@ -21,6 +21,8 @@ export const ListHouses = () => {
         setData([]);
       });
   }, []);
+
+  // Insert future components for pagination, sort, filter here
 
   return (
     <section>
