@@ -6,8 +6,6 @@ const routes = (app: Express) => {
   const router = express.Router();
 
   router.get("/", (req, res) => {
-    console.log("hiiiii route");
-
     // validation
 
     handlers.get(req, res);

@@ -1,23 +1,23 @@
 import { Request, Response } from "express";
 
-// import Todo from "../../schemas/todo";
 import sendResponse from "../../utils/sendResponse";
+import { ReturnData } from "../../types/http/getAll";
 
 export const getHandler = async (req: Request, res: Response) => {
-  // business logic: db stuff
-  console.log("hiiii handler");
+  try {
+    // validate request
 
-  sendResponse(res, { status: "success", code: 200, data: { title: "heehe" } });
+    // business logic: db stuff
 
-  // try {
-  //   // handle errors
-  //   const todos = await Todo.find({}, { __v: 0 });
+    // format return data
+    const data: ReturnData = {
+      title: "heehe",
+    };
 
-  //   sendResponse(res, { status: "success", code: 200, data: todos });
-  //   // no results will return data: []
-  // } catch (e) {
-  //   sendResponse(res, { status: "error", e });
-  // }
+    // handle success
+    sendResponse(res, { status: "success", code: 200, data });
+  } catch (e) {
+    // handle error
+    sendResponse(res, { status: "error", e });
+  }
 };
-
-// export default getHandler;
