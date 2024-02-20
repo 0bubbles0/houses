@@ -1,22 +1,4 @@
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  gap: 0.75em;
+.container {
   border-radius: 16px;
   background: rgba(203, 203, 203, 0.5);
-}
-
-.card > * {
-  margin: 0;
-}
-
-.card-image {
-  border-radius: 4px;
-  width: 100%;
-  height: auto;
-  /* height: 200px; */
-  /* width: 200px; */
 }

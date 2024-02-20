@@ -1,19 +1,18 @@
 import { PropsWithChildren } from "react";
 import "./Button.css";
 
-interface ButtonProps {
-  onClick?: () => void;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "primary" | "secondary";
 }
 
 export const Button = ({
-  onClick,
   variant,
   children,
-}: ButtonProps & PropsWithChildren) => {
+  ...rest
+}: PropsWithChildren<ButtonProps>) => {
   console.log("hi button", variant);
   return (
-    <button className={`button ${variant}`} onClick={onClick}>
+    <button className={`button ${variant}`} {...rest}>
       {children}
     </button>
   );

@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  padding: 30px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
