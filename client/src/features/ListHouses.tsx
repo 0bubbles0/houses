@@ -30,7 +30,10 @@ export const ListHouses = () => {
       {data && data.length ? (
         <HouseList houses={data} />
       ) : (
-        <p>Sorry, no houses are available yet</p>
+        <div>
+          <p>Sorry, no houses are available yet</p>
+          <p style={{ fontSize: "50px" }}>🏡</p>
+        </div>
       )}
     </section>
   );

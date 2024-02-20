@@ -1,12 +1,4 @@
-import { ListHouses } from "../features/ListHouses";
+import { HomePage } from "./home";
+import { AddHousePage } from "./addHouse";
 
-export const Home = () => {
-  return (
-    <>
-      <main>
-        <h1>Hiii</h1>
-        <ListHouses />
-      </main>
-    </>
-  );
-};
+export { HomePage, AddHousePage };
