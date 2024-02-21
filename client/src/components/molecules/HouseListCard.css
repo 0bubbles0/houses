@@ -5,6 +5,7 @@
   justify-content: space-around;
 
   gap: 0.75em;
+  padding-bottom: 20px;
 }
 
 .card > * {
@@ -15,6 +16,4 @@
   border-radius: 4px;
   width: 100%;
   height: auto;
-  /* height: 200px; */
-  /* width: 200px; */
 }
