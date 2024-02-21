@@ -4,6 +4,8 @@ This is a full-stack TypeScript MERN app, which lets a user view a list of real 
 
 To avoid confusion with coding concepts of `properties` (e.g. in JavaScript objects), I will call them "houses" from now on (even though you could use it for apartments etc. of course).
 
+<img width="1440" alt="Screenshot 2024-02-21 at 00 15 51" src="https://github.com/0bubbles0/houses/assets/77367593/3cdd6afd-f8f0-400a-981c-f1313bcb9f17">
+
 ## Requirements: 2-3hrs
 
 ### User stories
@@ -94,9 +96,13 @@ const data: ReturnData = Array(10).fill({
 });
 ```
 
-## UI & API designs
+## UI
+<img width="550" alt="Screenshot 2024-02-21 at 00 16 14" src="https://github.com/0bubbles0/houses/assets/77367593/aeda4e03-52e9-48a8-9877-66564d607028">
+<img width="1440" alt="Screenshot 2024-02-21 at 00 10 00" src="https://github.com/0bubbles0/houses/assets/77367593/ca3dfd8d-49a2-4fdc-8689-8c871f8837a7">
+<img width="1440" alt="Screenshot 2024-02-21 at 00 09 53" src="https://github.com/0bubbles0/houses/assets/77367593/cd83f38d-0324-465e-b212-6d9b634142c2">
 
-Photos of my UI & API designs, and screenshot from the actual web app will be available here or in an issue in this repository
+
+
 
 ## Explaining some technical decisions
 
