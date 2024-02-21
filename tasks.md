@@ -48,7 +48,7 @@ To keep this quick, to keep track of my tasks I opted for this Markdown file ins
 - [x] Decide schema of a House (for db, api calls)
 - [x] BE endpoint: route, input, output, validation/error/edge cases (empty), db interaction
   - Mongo seed data?
-  - [ ] test: unit test scenarios, Postman
+  - [x] test: unit test scenarios, Postman
 - [ ] FE:
   - [x] connect to endpoint - print page data, print <p>
   - [ ] avoid rerenders
@@ -89,8 +89,8 @@ To keep this quick, to keep track of my tasks I opted for this Markdown file ins
 
 - [ ] FE: components
   - Storybook, Jest
-- [ ] BE: Endpoints
-  - Jest
+- [x] BE: Endpoints
+  - [ ] figure out why response .json() is not a function
 
 ## Document
 

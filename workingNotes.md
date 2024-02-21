@@ -21,10 +21,10 @@ My scratchpad for this task
 - [ ] Schema typing: ... Typebox
 
 - [x] React: vite or create-react-app
-- [ ] css solution
+- [x] css solution
 - [ ] React state store -> Redux or Zustand
 - [x] packages: react-dom
-- [ ] form: Formik
+- [x] form: Formik
 
 - [x] Jest
 - [ ] Docker

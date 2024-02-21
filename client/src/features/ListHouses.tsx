@@ -26,7 +26,7 @@ export const ListHouses = () => {
 
   return (
     <section>
-      <h2>These are all the houses available:</h2>
+      <h2>These are all the houses available</h2>
       {data && data.length ? (
         <HouseList houses={data} />
       ) : (
